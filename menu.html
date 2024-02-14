@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Menu</title>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+      
+        
+    </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <!-- <div class="col col-lg-12 text-center mt-2 mb-2">
+        <img src="images/map.svg" alt="" style="height: 12px;"> Allow location access for local store menu and promos <span>
+            <button style="border-radius: 20px" type="button" class="btn btn-primary bg-dark">Set Location</button>
+        </span>
+    </div> -->
+    <!-- <hr/> -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light text-white">
+        <div class="container">
+          <!-- Navbar brand/logo -->
+          <a class="navbar-brand" href="index.html"><img src="images/logo.svg" alt=""></a>
+      
+          <!-- Toggle button for mobile -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <!-- Navbar links -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="row w-100">
+              <!-- First column -->
+              <div style="display:flex" class="col-md-12 menu-res">
+              <div class="col-md-6">
+                <ul class="navbar-nav col-reverse">
+                  <li class="nav-item item-pd">
+                    <a class="nav-link" href="menu.html">Menu</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="offers.html">Deals</a>
+                  </li>
+                  <!-- Add more links as needed -->
+                </ul>
+              </div>
+              <!-- Second column -->
+              <div class="col-md-6" style="margin-left: 30%;">
+                <ul class="navbar-nav col-reverse">
+                  <li class="nav-item">
+                    <a class="nav-link icon" href="signup.html"><img src="images/icon.svg" alt=""></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="signin.html">Sign In</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="">|</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="">₹0</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href=""><img src="images/bucket.svg" alt="" style="width: 26px;"></a>
+                  </li>
+                  <!-- Add more links as needed -->
+                </ul>
+              </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <br>
+      <br>
+      
+   </div>
+   <div class="container-fluid">
+       <div class="bg-dark text-white py-3 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col" >
+                    <h6 style="display: contents;">LET'S ORDER FOR DELIVERY, PICK UP, OR DINE-IN</h6>
+                    <button style="border-radius:20px;" type="button" class="btn btn-danger">Start Order</button>
+                </div>
+          
+            </div>
+        
+        </div>
+      </div>
+    <img src="images/slider1.webp" class="img-fluid" alt="Bootstrap Image">
+  </div>
+       <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <nav class="vertical-menu">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                 <h1>KFC MENU</h1>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link menu-items" href="#peri">PERI PERI CHICKEN</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link menu-items" href="#value">VALUE SNACKERS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link menu-items" href="#chicken">CHICKEN ROLLS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-items" href="#bucket">CHICKEN BUCKETS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link menu-items" href="#">BIRIYANI BUCKETS</a>
+                  </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-9">
+            <!-- Main content goes here -->
+            <div class="container">
+                <div class="input-group">
+                    <div class="form-outline" data-mdb-input-init>
+                      <input type="text" id="searchInput" class="form-control">
+                   
+                    </div>
+                    <button type="button" style="height: 36px;    background: #e4002b;font-family: fantasy;
+                    font-size: 18px;" onclick="searchWord()"> search </button>
+                    <div id="searchResults"></div>
+              
+                       
+                  </div>
+              </div>
+              <div class="container">
+                <!-- <h2>Content Above</h2> -->
+                <hr class="black-hr text-black">
+                <!-- <h2>Content Below</h2> -->
+              </div>
+
+              <section id="peri">
+                <div class="container bg-lightgrey p-3">
+                    <div>
+                        <h2>PERI PERI CHICKEN</h2>
+                    </div>
+                    <div class="row ">
+                      <div  class="col-md-6 border">
+                        <img src="images/menu1.jpg" class="img-fluid img-menu" alt="Image 1">
+                        <p>5 Leg Pc & 2 Dips Bucket</p>
+                        <small> Non veg Serves 2</small>
+                        <p>₹519.05</p>
+                        <p class="text-justify">Save Rs. 120 on 5 Peri Peri Leg Pieces dips</p>
+                        <a href="#" class="btn btn-primary text-center">ADD TO CART</a>
+                      </div>
+                      <div class="col-md-6 border">
+                        <img src="images/menu2.jpg" class="img-fluid img-menu" alt="Image 2">
+                        <p>Peri Peri 10 Pc Chicken Strips</p>
+                        <small> Non veg Serves 2</small>
+                        <p>₹499.05</p>
+                        <p class="text-justify">Save 24% on 10 Spicy Peri Peri chicken boneless</p>
+                        <a href="#" class="btn btn-primary text-center">ADD TO CART</a>
+                      </div>
+                    </div>
+                    <div class="row mt-3">
+                      <div class="col-md-6 border">
+                        <img src="images/menu3.jpg" class="img-fluid img-menu" alt="Image 3">
+                        <p>Peri Peri 10 Leg Pc & 4 Dips</p>
+                        <small>Peri Peri 10 Leg Pc & 4 Dips</small>
+                        <p>₹948.57</p>
+                        <p class="text-justify">Save Rs. 334 on 10 Peri Peri Leg Pieces & 4 Dips</p>
+                        <a href="#" class="btn btn-primary text-center">ADD TO CART</a>
+                      </div>
+                      <div class="col-md-6 border ">
+                        <img src="images/menu4.jpg" class="img-fluid img-menu" alt="Image 4">
+                        <p>Peri Peri 6pc Chicken Strips</p>
+                        <small> Non veg Serves 2</small>
+                        <p>₹299.05</p>
+                        <p class="text-justify">Save 16% on 6 Spicy Peri Peri chicken boneless strips</p>
+                        <a href="#" class="btn btn-primary text-center">ADD TO CART</a>
+                      </div>
+                    </div>
+                  </div>
+              </section>
+              <section id="value">
+                
+                <div class="container bg-lightgrey p-3">
+                    <div>
+                        <h2>VALUE SNACKERS</h2>
+                    </div>
+                    <div class="row ">
+                      <div class="col-md-4">
+                        <img src="images/roll.jpg" class="img-fluid img-menu" alt="Image 1">
+                        <p>Single Chicken Roll</p>
+                        <small>Non veg</small>
+                        <p>₹119.05</p>
+                        <p class="text-justify">Street style rolled with single chicken strip</p>
+                        <a href="#" class="btn btn-primary text-center">ADD TO CART</a>
+                      </div>
+                      <div class="col-md-4 border">
+                        <img src="images/combo.jpg" class="img-fluid img-menu" alt="Image 2">
+                        <p>Chicken  Burger </p>
+                        <small>Non veg</small>
+                        <p>₹499.05</p>
+                        <p class="text-justify">Longgg burger with crunchy chicken and onions</p>
+                        <a href="#" class="btn btn-primary text-center">ADD TO CART</a>
+                      </div>
+                      <div class="col-md-4 border">
+                        <img src="images/pop.jpg" class="img-fluid img-menu" alt="Image 2">
+                        <p>Regular Popcorn
+                        </p>
+                        <small> Non veg Serves 2</small>
+                        <p>₹115.05</p>
+                        <p class="text-justify">Signature bite-sized boneless chicken, with special spices</p>
+                        <a href="#" class="btn btn-primary text-center">ADD TO CART</a>
+                      </div>
+                    </div>
+                   
+                  </div>
+              </section>
+              <section id="chicken">
+                
+                <div class="container bg-lightgrey p-3">
+                    <div>
+                        <h2>CHICKEN ROLLS</h2>
+                    </div>
+                    <div class="row ">
+                      <div class="col-md-4 border">
+                        <img src="images/chicken1.jpg" class="img-fluid img-menu" alt="Image 1">
+                        <p>Classic Chicken Roll</p>
+                        <small>Non veg Serves 1</small>
+                        <p>₹176.19</p>
+                        <p class="text-justify">Our new Classic Chicken Roll served with Pepsi 475ml</p>
+                        <a href="#" class="btn btn-primary text-center">ADD TO CART</a>
+                      </div>
+                      <div class="col-md-4 border">
+                        <img src="images/chicken2.jpg" class="img-fluid img-menu" alt="Image 2">
+                        <p>Double Chicken Roll </p>
+                        <small>Non veg Serves 1</small>
+                        <p>₹225.71</p>
+                        <p class="text-justify">Our new Double Chicken Roll served with Pepsi 475ml</p>
+                        <a href="#" class="btn btn-primary text-center">ADD TO CART</a>
+                      </div>
+                      <div class="col-md-4 border">
+                        <img src="images/chicken3.jpg" class="img-fluid img-menu" alt="Image 2">
+                        <p>Classic Chicken Roll  
+                        </p>
+                        <small>Non veg Serves 1</small>
+                        <p>₹339.05</p>
+                        <p class="text-justify">Deal combo of 1 Classic Chicken Roll, Large Fries, 2 Dips</p>
+                        <a href="#" class="btn btn-primary text-center">ADD TO CART</a>
+                      </div>
+                    </div>
+                   
+                  </div>
+              </section>
+              <section id="bucket">
+                
+                <div class="container bg-lightgrey p-3">
+                    <div>
+                        <h2>CHICKEN BUCKETS</h2>
+                    </div>
+                    <div class="row ">
+                      <div class="col-md-4 border">
+                        <img src="images/buck1.jpg" class="img-fluid img-menu" alt="Image 1">
+                        <p>The Allu Arjun </p>
+                        <small>Non veg Serves 1</small>
+                        <p>₹176.19</p>
+                        <p class="text-justify">Our new Classic Chicken Roll served with Pepsi 475ml</p>
+                        <a href="#" class="btn btn-primary text-center">ADD TO CART</a>
+                      </div>
+                      <div class="col-md-4 border">
+                        <img src="images/buck2.jpg" class="img-fluid img-menu" alt="Image 2">
+                        <p>All in One Bucket </p>
+                        <small>Non veg Serves 1</small>
+                        <p>₹225.71</p>
+                        <p class="text-justify">Our new Double Chicken Roll served with Pepsi 475ml</p>
+                        <a href="#" class="btn btn-primary text-center">ADD TO CART</a>
+                      </div>
+                      <div class="col-md-4 border">
+                        <img src="images/buck3.jpg" class="img-fluid img-menu" alt="Image 2">
+                        <p>Bucket for Two
+                        </p>
+                        <small>Non veg Serves 1</small>
+                        <p>₹339.05</p>
+                        <p class="text-justify">Deal combo of 1 Classic Chicken Roll, Large Fries, 2 Dips </p>
+                        <a href="#" class="btn btn-primary text-center">ADD TO CART</a>
+                      </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-4 border">
+                          <img src="images/buck4.jpg" class="img-fluid img-menu" alt="Image 1">
+                          <p>Stay Home Bucket</p>
+                          <small>Non veg Serves 1</small>
+                          <p>₹176.19</p>
+                          <p class="text-justify">Our new Classic Chicken Roll served with Pepsi 475ml</p>
+                          <a href="#" class="btn btn-primary text-center">ADD TO CART</a>
+                        </div>
+                        <div class="col-md-4 border">
+                          <img src="images/buck5.jpg" class="img-fluid img-menu" alt="Image 2">
+                          <p>Double Chicken Roll </p>
+                          <small>Non veg Serves 1</small>
+                          <p>₹225.71</p>
+                          <p class="text-justify">Our new Double Chicken Roll served with Pepsi 475ml</p>
+                          <a href="#" class="btn btn-primary text-center">ADD TO CART</a>
+                        </div>
+                        <div class="col-md-4 border">
+                          <img src="images/buck6.jpg" class="img-fluid img-menu" alt="Image 2">
+                          <p>Classic Chicken Roll  
+                          </p>
+                          <small>Non veg Serves 1</small>
+                          <p>₹339.05</p>
+                          <p class="text-justify">Deal combo of 1 Classic Chicken Roll, Large Fries, 2 Dips </p>
+                          <a href="#" class="btn btn-primary text-center">ADD TO CART</a>
+                        </div>
+                      </div>
+                      
+                   
+                  </div>
+              </section>
+         
+              
+          </div>
+        </div>
+      </div>
+      <div class="full-width-height">
+        <div class="container">
+            <div class="row">
+              <div class="col"> <img src="images/bucket-footer.svg" class="img-fluid" alt="Responsive Image"></div>
+              <div class="col">
+                <span class="text-white text-center">Legal</span>
+                <ul><li><a href="https://online.kfc.co.in/terms-and-conditions" class="text-decoration-none text-white">Terms and Conditions</a></li></ul>
+                <ul ><li ><a href="https://online.kfc.co.in/privacyPolicy" class="text-decoration-none text-white">Privacy Policy</a></li></ul>
+                <ul><li><a href="https://online.kfc.co.in/about-kfc/disclaimer" class="text-decoration-none text-white">Disclaiamer</a></li></ul>
+                <ul><li><a href="https://online.kfc.co.in/about-kfc/caution-notice" class="text-decoration-none text-white">Caution Notice</a></li></ul> 
+                
+              </div>
+              <div class="col">
+                <span class="text-white">KFC India</span>
+                <ul><li><a href="https://online.kfc.co.in/terms-and-conditions" class="text-decoration-none text-white">About KFC</a></li></ul>
+                <ul><li><a href="https://online.kfc.co.in/privacyPolicy" class="text-decoration-none text-white">KFC Care</a></li></ul>
+                <ul><li><a href="https://online.kfc.co.in/about-kfc/disclaimer" class="text-decoration-none text-white">Careers</a></li></ul>
+                <ul><li><a href="https://online.kfc.co.in/about-kfc/caution-notice" class="text-decoration-none text-white">Our Golden Past</a></li></ul> 
+                
+              </div>
+              <div class="col">
+                <span class="text-white">KFC Food</span>
+                <ul><li><a href="https://online.kfc.co.in/terms-and-conditions" class="text-decoration-none text-white">Menu</a></li></ul>
+                <ul><li><a href="https://online.kfc.co.in/privacyPolicy" class="text-decoration-none text-white">Order Lookup</a></li></ul>
+                <ul><li><a href="https://online.kfc.co.in/about-kfc/disclaimer" class="text-decoration-none text-white">Gift Card</a></li></ul>
+                <ul><li><a href="https://online.kfc.co.in/about-kfc/caution-notice" class="text-decoration-none text-white">Nutrition</a></li></ul> 
+                
+              </div>
+              <div class="col"><img src="images/google.svg" alt="">5</div>
+              <div class="col"><img src="images/apple.svg" alt=""></div>
+              
+    
+            </div>
+          </div>
+      </div> 
+</body>
+</html>

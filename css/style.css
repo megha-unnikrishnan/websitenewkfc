@@ -1,0 +1,331 @@
+/*
+For more details-
+https://www.testkarts.com/blog/horizontal-card-scroll-with-arrow */
+.cover {
+    position: relative;
+    padding: 0px 30px;
+    margin-top: 100px;
+}
+
+.left {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.right {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.scroll-images {
+    position: relative;
+    width: 100%;
+    padding: 40px 0px;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 250px;
+    height: 200px;
+    padding: 0px 15px;
+    margin: 1px 10px;
+    border: 1px solid #f1f1f1;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 15px 2px rgb(0 0 0 / 10%);;
+    box-shadow: 0px 0px 15px 2px rgb(0 0 0 / 10%);;
+}
+
+.child img, .child > svg {
+    position: absolute;
+    margin-top: -195px;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    background: #03A9F4;
+}
+
+.scroll-images::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: #aaa;
+}
+
+.scroll-images::-webkit-scrollbar-thumb {
+    background-color: black;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 25px;
+}
+body{
+    margin: 0px;
+}
+.bg-light{
+    background-color: #fff !important;
+    width: 100%;
+/* position: fixed;
+z-index: 9999; */
+}
+.black-background {
+background-color: #000; 
+height: 100vh; 
+/* padding: 20px;  */
+margin-top: 13%;
+}
+.offer{
+font-size: 27px;
+font-weight: 700;
+padding-top: 60px;
+}
+.carousel-item {
+display: flex;
+justify-content: center;
+}
+.offer-card {
+width: 300px; /* Set width of each card */
+margin: 0 10px;
+}
+.card-img-top {
+width: 100%;
+height: 200px; /* Adjust the height of the images as needed */
+object-fit: cover;
+}
+.red-background{
+color: #e4002b;
+}
+.full-width-height{
+background-color: #000;
+height: 50%;
+}
+.slide-container{
+max-width: 1120px;
+width: 100%;
+padding: 40px 0;
+}
+.slide-content{
+margin: 0 40px;
+overflow: hidden;
+border-radius: 25px;
+}
+.card{
+/* border-radius: 25px; */
+background-color: #FFF;
+}
+.image-content,
+.card-content{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 10px 14px;
+}
+.image-content{
+position: relative;
+row-gap: 5px;
+padding: 25px 0;
+}
+.overlay{
+position: absolute;
+left: 0;
+top: 0;
+height: 100%;
+width: 100%;
+background-color: #4070F4;
+border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after{
+content: '';
+position: absolute;
+right: 0;
+bottom: -40px;
+height: 40px;
+width: 40px;
+background-color: #4070F4;
+}
+.overlay::after{
+border-radius: 0 25px 0 0;
+background-color: #FFF;
+}
+.card-image{
+position: relative;
+height: 150px;
+width: 150px;
+border-radius: 50%;
+background: #FFF;
+padding: 3px;
+}
+.card-image .card-img{
+height: 100%;
+width: 100%;
+object-fit: cover;
+border-radius: 50%;
+border: 4px solid #4070F4;
+}
+.name{
+font-size: 18px;
+font-weight: 500;
+color: #333;
+}
+.description{
+font-size: 14px;
+color: #707070;
+text-align: center;
+}
+.button{
+border: none;
+font-size: 16px;
+color: #FFF;
+padding: 8px 16px;
+background-color: #4070F4;
+border-radius: 6px;
+margin: 14px;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+.button:hover{
+background: #265DF2;
+}
+
+.swiper-navBtn{
+color: #6E93f7;
+transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+color: #4070F4;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+font-size: 35px;
+}
+.swiper-button-next{
+right: 0;
+}
+.swiper-button-prev{
+left: 0;
+}
+.swiper-pagination-bullet{
+background-color: #6E93f7;
+opacity: 1;
+}
+.swiper-pagination-bullet-active{
+background-color: #4070F4;
+}
+
+@media screen and (max-width: 768px) {
+.slide-content{
+margin: 0 10px;
+}
+.swiper-navBtn{
+display: none;
+}
+}
+.slider-container {
+overflow: hidden;
+white-space: nowrap;
+}
+.card {
+display: inline-block;
+width: 277px; /* Adjust card width as needed */
+margin-right: 10px; /* Adjust card margin as needed */
+}
+ul{
+list-style-type: none;
+}
+
+.menu-items{
+    color: #494949;
+    font-size: 16px;
+}
+.btn-primary{
+    background-color: #e4002b;
+border: 1px solid #e4002b;
+color: #fff;
+text-align: center;
+}
+.bg-light {
+background-color: #fff !important;
+width: 100%;
+position: fixed;
+z-index: 9999;}
+
+.red-background{
+    color: #e4002b;
+ }
+ .bg-light {
+ background-color: #fff !important;
+ width: 100%;
+ position: fixed;
+ z-index: 9999;}
+ .offer-area{
+     margin-left:65px;
+ }
+ @media screen and (max-width:600px){
+     .offer-area{
+     margin-left:-16px !important;
+ }
+ 
+ }
+ @media screen and (min-width:600px){
+     .offer-area{
+     margin-left:-16px !important;
+ }
+ 
+ }
+ 
+  .md-container{
+     margin: 7%;
+  }
+  .card-box{
+    padding-right:0;
+  }
+  @media screen and (max-width:992px){
+  .menu-res{
+    display: flex;
+    justify-content: space-between;
+  }
+  .col-reverse{
+   flex-direction: row;
+  }
+  .item-pd{
+    padding-right:5px;
+  }
+}
+.align-content{
+    margin-bottom: 4px;
+    padding-bottom: 3px
+}
+.kfc-footer ul{
+    padding:0;
+}
+.offer-deals{
+    border: 1px solid black;
+                line-height: 7px;
+                border-radius: 20px;
+                margin: 10%;
+                padding: 4%;
+                margin-left: 31%;
+                font-size: 14px
+}
+.offer-a{
+    /* text-decoration: none; */
+    color: black;
+}

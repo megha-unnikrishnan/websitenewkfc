@@ -1,0 +1,1 @@
+(this["webpackJsonpreusable-comps"]=this["webpackJsonpreusable-comps"]||[]).push([[114],{1258:function(t,e,s){"use strict";s.r(e);var a=s(0),c=s(134),o=s(1084),u=s(5);e.default=Object(o.a)((function(t){return Object(u.jsx)(c.a,Object(a.a)({testId:null===t||void 0===t?void 0:t.testId,importPath:"NUTRITION_ALLERGEN_LANDING_PAGE"},t))}))}}]);

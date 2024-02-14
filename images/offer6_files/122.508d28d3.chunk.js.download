@@ -1,0 +1,1 @@
+(this["webpackJsonpreusable-comps"]=this["webpackJsonpreusable-comps"]||[]).push([[122],{1250:function(e,t,s){"use strict";s.r(t);var a=s(0),c=s(134),r=s(5);t.default=function(e){return Object(r.jsx)(c.a,Object(a.a)(Object(a.a)({},e),{},{testId:"Active-order-Page",importPath:"ACTIVE_ORDER_PAGE"}))}}}]);

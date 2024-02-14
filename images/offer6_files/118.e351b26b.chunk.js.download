@@ -1,0 +1,1 @@
+(this["webpackJsonpreusable-comps"]=this["webpackJsonpreusable-comps"]||[]).push([[118],{1245:function(s,t,e){"use strict";e.r(t);var a=e(0),c=e(134),p=e(5);t.default=function(s){return Object(p.jsx)(c.a,Object(a.a)({importPath:"TERMS_OF_USE_CONTAINER"},s))}}}]);
